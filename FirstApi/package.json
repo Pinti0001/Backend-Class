@@ -1,0 +1,17 @@
+{
+  "name": "firstapi",
+  "version": "1.0.0",
+  "description": "my first API ever",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tsting"
+  ],
+  "author": "PK",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.0.0-beta.2"
+  }
+}
