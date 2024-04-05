@@ -8,6 +8,6 @@ const studentSchema = new mongoose.Schema({
     feesPaid : Boolean,
     rollNo : String,
     sem : Number
-},{timestamps});
+},{timestamps:true});
 
-export default  mongoose.model("FSTStudent")
+export default  mongoose.model("FSTStudent", studentSchema);
