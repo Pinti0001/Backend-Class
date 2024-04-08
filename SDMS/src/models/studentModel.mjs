@@ -8,7 +8,7 @@ const studentSchema = new mongoose.Schema({
     semester : {type:String, required:true, minLength:3, trim:true},
     phone : {type:String, required:true, minLength:3, trim:true, minLength:10, unique:true},
     age : {type:Number, min:0, max:150, required:true},
-    email : {type:String, required:true, minLength:3, trim:true, unique:true},
+    email : {type:String, required:true, minLength:3, trim:true,},
     password : {type:String, required:true, minLength:3, trim:true, minLength:4, maxLength:50},
     sex : {type:String, required:true, minLength:3, trim:true}
 },{timestamps:true});
