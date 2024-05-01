@@ -43,7 +43,7 @@ const createStudent = async (req,res) => {
         status:true,
         message: createdStudent
     })
-    } catch (error) {
+    } catch (error) {a
         return res.status(500).send({status:"failed",message:error.message})
     }
     

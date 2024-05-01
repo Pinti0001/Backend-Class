@@ -5,12 +5,24 @@ import bodyParser from 'body-parser';
 const app = express();
 app.use(bodyParser.json());
 
+const ageValidator = (value) =>{
+    if(value<18 || value>50) {}
+}
+
 const userSchema = new mongoose.Schema({
     username : {
         type : String,
         required : true
     },
-    email : String
+    email : String,
+    age : {
+        type : Number,
+
+    },
+    status:{
+        tyoe: String,
+        enum:['active','inactive','failed']
+    }
 });
 
 const User = mongoose.model('User',userSchema);
@@ -31,4 +43,4 @@ mongoose.connect("mongodb+srv://pintupk:hppk12pintu@cluster0.z14ijp4.mongodb.net
     app.listen(3000);
     console.log("port is running");
 })
-.catch
+.catch((e)=>console.log(e.message))

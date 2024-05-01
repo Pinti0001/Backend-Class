@@ -6,7 +6,7 @@ const studentSchema = new mongoose.Schema({
     batch : {type:String, required:true, minLength:3, trim:true},
     course : {type:String, required:true, minLength:3, trim:true},
     semester : {type:String, required:true, minLength:3, trim:true},
-    phone : {type:String, required:true, minLength:3, trim:true, minLength:10, unique:true},
+    phone : {type:String, required:true, trim:true, minLength:10, unique:true},
     age : {type:Number, min:0, max:150, required:true},
     email : {type:String, required:true, minLength:3, trim:true,},
     password : {type:String, required:true, minLength:3, trim:true, minLength:4, maxLength:50},
